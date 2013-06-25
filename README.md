@@ -1,7 +1,7 @@
 jade graph
 ---------
 
-[![Build Status](https://travis-ci.org/samccone/stylus-graph.png?branch=master)](https://travis-ci.org/samccone/jade-graph)
+[![Build Status](https://travis-ci.org/samccone/jade-graph.png?branch=master)](https://travis-ci.org/samccone/jade-graph)
 
 ### a jade asset graph generator
 
