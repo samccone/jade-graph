@@ -1,0 +1,34 @@
+{
+  "name": "jade-graph",
+  "version": "0.31.2",
+  "description": "a jade asset graph",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "dependencies": {
+    "jade": "~0.32.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/samccone/jade-graph.git"
+  },
+  "keywords": [
+    "jade",
+    "asset",
+    "graph"
+  ],
+  "author": "Sam Saccone",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "6b325ccb534394fd71e477f3d39d5d5d0ab14201",
+  "bugs": {
+    "url": "https://github.com/samccone/jade-graph/issues"
+  }
+}
