@@ -1,6 +1,5 @@
 var mocha             = require('mocha');
 var assert            = require('assert');
-
 var jadeAssetGraph    = require('../index');
 
 describe("find imports", function() {
