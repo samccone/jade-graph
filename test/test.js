@@ -18,4 +18,9 @@ describe("find imports", function() {
     assert.equal(4, d.length);
   });
 
+  it("should find 1 dependency", function() {
+    d = jadeAssetGraph.getDependencies(__dirname + '/sample-files/extend-test.jade');
+    assert.equal(1, d.length);
+  });
+
 });

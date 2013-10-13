@@ -20,7 +20,12 @@ exports.getDependencies = function(path) {
 }
 
 function getNestedIncludeFiles(node) {
-  files = [node.filename];
+  if (node.parser && node.parser.extending) {
+    files = [node.parser.extending.filename];
+  }
+  else if (node.filename) {
+    files = [node.filename];
+  }
 
   node.nodes.forEach(function(n) {
     if (n.nodes) {
