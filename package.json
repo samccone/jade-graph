@@ -1,6 +1,6 @@
 {
   "name": "jade-graph",
-  "version": "0.31.3",
+  "version": "0.31.4",
   "description": "a jade asset graph",
   "main": "index.js",
   "directories": {
@@ -10,7 +10,8 @@
     "test": "mocha test"
   },
   "dependencies": {
-    "jade": "0.31.2"
+    "jade": "0.31.2",
+    "underscore": "~1.5.2"
   },
   "devDependencies": {
     "mocha": "~1.11.0"
