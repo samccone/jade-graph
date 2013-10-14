@@ -23,4 +23,9 @@ describe("find imports", function() {
     assert.equal(1, d.length);
   });
 
+  it("should find 2 dependencies", function() {
+    d = jadeAssetGraph.getDependencies(__dirname + '/sample-files/extends-with-includes.jade');
+    assert.equal(2, d.length);
+  });
+
 });
