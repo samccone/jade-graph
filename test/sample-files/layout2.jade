@@ -1,0 +1,20 @@
+!!!
+html(lang='en')
+  head
+    include _meta
+
+  body
+    #contact
+      include _contact
+
+    block content
+
+    footer
+      h2 i am footer
+
+    //if lt IE 9
+      script(src='http://cdnjs.cloudflare.com/ajax/libs/es5-shim/2.0.8/es5-shim.min.js')
+      script(src='http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js')
+    script.
+      console.log("ok")
+    != livereload

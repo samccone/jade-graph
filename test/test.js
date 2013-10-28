@@ -37,4 +37,9 @@ describe("find imports", function() {
     d = jadeAssetGraph.getDependencies(__dirname + '/sample-files/complex.jade');
     assert.equal(3, d.length);
   });
+
+  it("should find 3 dependencies", function() {
+    d = jadeAssetGraph.getDependencies(__dirname + '/sample-files/demo3.jade');
+    assert.equal(3, d.length);
+  });
 });
