@@ -21,6 +21,8 @@ exports.getDependencies = function(path) {
 }
 
 function getNestedIncludeFiles(node) {
+  var files = [];
+
   if (node.parser && node.parser.extending) {
     files = [node.parser.extending.filename];
   }

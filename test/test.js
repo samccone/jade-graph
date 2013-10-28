@@ -3,6 +3,11 @@ var assert            = require('assert');
 var jadeAssetGraph    = require('../index');
 
 describe("find imports", function() {
+  it("should handle the case when there are no files", function() {
+    d = jadeAssetGraph.getDependencies(__dirname + '/sample-files/layout.jade');
+    assert.equal(0, d.length);
+  });
+
   it("should find 0 imports", function() {
     d = jadeAssetGraph.getDependencies(__dirname + '/sample-files/no-imports.jade');
     assert.equal(0, d.length);
