@@ -12,8 +12,7 @@ fs.readFileSync = function() {
 
 exports.getDependencies = function(path) {
   var contents  = fs.readFileSync(path, "utf8");
-  var options   = {};
-  (new jade.Parser(contents, path, options)).parse().nodes
+  (new jade.Parser(contents, path, {})).parse().nodes
 
   var included = includes.slice(0);
   includes = [];
