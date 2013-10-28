@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+var graph = require('../index').getDependencies;
+
+process.stdout.write(graph(process.argv[2]).join('\n') + "\n");
